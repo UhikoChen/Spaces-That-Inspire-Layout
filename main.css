@@ -1,0 +1,300 @@
+body{
+    margin: 0;
+}
+
+a{
+    font-family: sans-serif;
+    color: #9bcdfc;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* -----背景----- */
+.white-page{
+    background-color: #ffffff;
+    padding: 40px 0px;
+}
+
+.gray-page{
+    background-color: #eef4fb;
+    padding:40px 0;
+}
+
+.blue-page{
+    background-color: #c8e3fd;
+    padding:40px 0;
+}
+
+.pic-page{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1180px;
+    min-height: 600px;
+    padding: 15px;
+}
+
+/* -----切割樣式----- */
+
+/* grid左右分割 */
+.grid-left-and-right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    align-items: center;
+    position: relative;
+}
+
+/* 圖片三分區域 */
+.three-parts-picture{
+    display: grid;
+    grid-template-columns: auto auto;
+    min-height:800px;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.three-parts-picture > div{
+    background-size: cover;
+    background-position: center;
+}
+
+.three-parts-picture>.background-pic-up{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    min-height: 300px;
+}
+
+/* grid上下分割 */
+.grid-up-and-down{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+}
+
+/* grid三部分 */
+.grid-three-parts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.three-parts-pic{
+    background-size: cover;
+}
+
+.text-up-and-pic-down{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    min-height: 650px;
+}
+
+.pic-up-and-text-down{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    min-height: 650px;
+}
+
+/* grid四格切分 */
+.grid-pane{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+    min-height: 100%;
+}
+
+/* 項目區塊 */
+.workspace{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    min-width: 240px;
+}
+
+/* -----裝飾----- */
+
+/* 藍色垂直線 */
+.blue-vertical-line{
+    height: 70px;
+    border-left: 8px solid #9bcdfc;
+    margin-bottom: 30px;
+}
+
+/* 白色背景 */
+.whiteback{
+    background-color: white;
+    width: 450px;
+    padding:30px 50px;
+    top: 50px;
+}
+
+/* 黑色區塊背景 */
+.black-back{
+    background-color: black;
+    min-width: 400px;
+    min-height: 80px;
+    position:absolute;
+    bottom: 0px;
+    margin: auto 0;
+}
+
+/* 白色底色 */
+.white-background{
+    background-color: white;
+    position: relative;
+}
+
+/* 藍色邊框線按鈕 */
+.blue-border-button{
+    display: inline-block;
+    margin: 25px 0;
+    border: 2px solid #9bcdfc;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color: black;
+    font-size: 16pt;
+}
+
+.blue-border-button:hover{
+    color: rgb(121, 121, 121);
+    text-decoration: none;
+    background-color: rgb(240, 240, 240);
+}
+
+/* 藍底色按鈕 */
+.color-border-button{
+    display: block;
+    width: 260px;
+    margin: 30px auto;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #9ecefc;
+    font-size: 16pt;
+    padding: 15px 30px;
+    color: black;
+}
+
+.color-border-button:hover{
+    text-decoration: none;
+    background-color: #cbe6ff;
+    color: rgb(121, 121, 121);
+}
+
+/* 藍色字按鈕 */
+.color-blue-button{
+    color: #9ecefc;
+    font-size: 14pt;
+    font-weight: bold;
+    display: block;
+    padding: 25px 0;
+}
+
+/* -----字體部分----- */
+
+/* 文字部分間距 */
+.content-part{
+    padding:30px 0;
+}
+
+.content-padding{
+    width: 300px;
+    padding-top:35px;
+    margin: 0 auto;
+}
+
+.content-author{
+    width: 350px;
+    padding: 25px 0 0 15px;
+}
+
+.big-title{
+    font-family: sans-serif;
+    font-size: 48pt;
+    font-weight: 800;
+    line-height: 120%;
+}
+
+.small-title-center{
+    font-family: sans-serif;
+    font-size: 28pt;
+    font-weight: 800;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.small-title-left{
+    font-family: sans-serif;
+    font-size: 28pt;
+    font-weight: 800;
+    padding: 10px 0;
+}
+
+.mini-title{
+    font-family: sans-serif;
+    font-size: 16pt;
+    font-weight: 800;
+}
+
+.big-content{
+    font-family: sans-serif;
+    font-size:20pt;
+    line-height: 150%;
+    padding: 25px 0;
+}
+
+.small-content-center{
+    font-size: 14pt;
+    width: 1000px; /*限制字體長度*/
+    margin: 0 auto;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 150%;
+}
+
+.small-content-left{
+    font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 150%;
+    padding: 10px 0;
+}
+
+.small-content-blue{
+    font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 150%;
+    color: #9ecefc;
+}
+
+.small-content-white{
+    font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 150%;
+    color: white;
+}
+
+/* -----圖片大小----- */
+
+.picture-400{
+    background-size: cover;
+    min-height: 400px;
+}
+
+.picture-500{
+    background-size: cover;
+    min-height: 500px;
+    margin-bottom: 50px;
+}
+
+.picture-600{
+    min-height: 600px;
+    background-position: center;
+    background-size: cover;
+}
